@@ -1,0 +1,158 @@
+/* Reset dan Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0f;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Typography */
+h2 {
+  margin-bottom: 20px;
+  color: #c084fc;
+  text-shadow: 0 0 10px #7c3aed;
+}
+
+.section h3 {
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+/* Section Cards */
+.section {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #111018;
+  border-radius: 12px;
+  border: 1px solid #2a0f3a;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.15);
+}
+
+/* List Items */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #1f1b2e;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.item:hover {
+  background: #1a102a;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+/* Form Elements */
+label {
+  cursor: pointer;
+  flex: 1;
+}
+
+input[type="checkbox"] {
+  accent-color: #a855f7;
+  transform: scale(1.1);
+  margin-right: 10px;
+}
+
+/* Price Display */
+.price {
+  color: #a855f7;
+  font-weight: bold;
+}
+
+/* Total Box */
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #120d1f;
+  border: 1px solid #3b1d5e;
+  border-radius: 12px;
+  position: sticky;
+  bottom: 0;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.total {
+  font-size: 28px;
+  color: #c084fc;
+  font-weight: bold;
+  text-shadow: 0 0 10px #7c3aed;
+}
+
+/* Buttons */
+button {
+  background: #1a102a;
+  color: #fff;
+  border: 1px solid #3b1d5e;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #2a1742;
+  box-shadow: 0 0 10px #7c3aed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  .total-box {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .total {
+    font-size: 24px;
+  }
+  
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .price {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section {
+    padding: 12px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
